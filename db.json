@@ -1,0 +1,184 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Stylish Denim Jacket",
+      "description": "A classic denim jacket with a modern fit.",
+      "image": "download (1).jpg",
+      "salePrice": 59.99,
+      "price": 79.99,
+      "salePercent": 25
+    },
+    {
+      "id": 2,
+      "name": "Leather Biker Jacket",
+      "description": "A rugged and stylish leather jacket.",
+      "image": "download (2).jpg",
+      "salePrice": 199.99,
+      "price": 249.99,
+      "salePercent": 20
+    },
+    {
+      "id": 3,
+      "name": "Wool Blend Overcoat",
+      "description": "A warm and elegant wool blend overcoat.",
+      "image": "download (3).jpg",
+      "salePrice": 149.99,
+      "price": 199.99,
+      "salePercent": 25
+    },
+    {
+      "id": 4,
+      "name": "Hooded Parka",
+      "description": "A durable parka with a removable hood.",
+      "image": "download (4).jpg",
+      "salePrice": 99.99,
+      "price": 129.99,
+      "salePercent": 23
+    },
+    {
+      "id": 5,
+      "name": "Fleece Jacket",
+      "description": "A cozy fleece jacket for everyday wear.",
+      "image": "download (5).jpg",
+      "salePrice": 49.99,
+      "price": 69.99,
+      "salePercent": 29
+    },
+    {
+      "id": 6,
+      "name": "Quilted Bomber Jacket",
+      "description": "A stylish quilted bomber jacket.",
+      "image": "download (6).jpg",
+      "salePrice": 79.99,
+      "price": 99.99,
+      "salePercent": 20
+    },
+    {
+      "id": 7,
+      "name": "Rainproof Windbreaker",
+      "description": "A lightweight, rainproof windbreaker.",
+      "image": "download (7).jpg",
+      "salePrice": 39.99,
+      "price": 59.99,
+      "salePercent": 33
+    },
+    {
+      "id": 8,
+      "name": "Trench Coat",
+      "description": "A timeless trench coat with a tailored fit.",
+      "image": "download (8).jpg",
+      "salePrice": 129.99,
+      "price": 179.99,
+      "salePercent": 28
+    },
+    {
+      "id": 9,
+      "name": "Puffer Jacket",
+      "description": "A warm and lightweight puffer jacket.",
+      "image": "download (9).jpg",
+      "salePrice": 89.99,
+      "price": 119.99,
+      "salePercent": 25
+    },
+    {
+      "id": 10,
+      "name": "Peacoat",
+      "description": "A double-breasted peacoat in a wool blend.",
+      "image": "download (10).jpg",
+      "salePrice": 139.99,
+      "price": 179.99,
+      "salePercent": 22
+    },
+    {
+      "id": 11,
+      "name": "Field Jacket",
+      "description": "A military-inspired field jacket.",
+      "image": "download (11).jpg",
+      "salePrice": 99.99,
+      "price": 129.99,
+      "salePercent": 23
+    },
+    {
+      "id": 12,
+      "name": "Varsity Jacket",
+      "description": "A retro-style varsity jacket.",
+      "image": "download (12).jpg",
+      "salePrice": 89.99,
+      "price": 109.99,
+      "salePercent": 18
+    },
+    {
+      "id": 13,
+      "name": "Sherpa-Lined Jacket",
+      "description": "A cozy sherpa-lined jacket for winter.",
+      "image": "download (13).jpg",
+      "salePrice": 79.99,
+      "price": 99.99,
+      "salePercent": 20
+    },
+    {
+      "id": 14,
+      "name": "Blazer",
+      "description": "A sharp blazer for formal occasions.",
+      "image": "download (14).jpg",
+      "salePrice": 119.99,
+      "price": 159.99,
+      "salePercent": 25
+    },
+    {
+      "id": 15,
+      "name": "Down Jacket",
+      "description": "A down-filled jacket for extreme cold.",
+      "image": "download (15).jpg",
+      "salePrice": 129.99,
+      "price": 169.99,
+      "salePercent": 24
+    },
+    {
+      "id": 16,
+      "name": "Leather Blazer",
+      "description": "A sophisticated leather blazer.",
+      "image": "download (16).jpg",
+      "salePrice": 199.99,
+      "price": 249.99,
+      "salePercent": 20
+    },
+    {
+      "id": 17,
+      "name": "Lightweight Anorak",
+      "description": "A practical and lightweight anorak.",
+      "image": "download (17).jpg",
+      "salePrice": 49.99,
+      "price": 79.99,
+      "salePercent": 38
+    },
+    {
+      "id": 18,
+      "name": "Corduroy Jacket",
+      "description": "A vintage-inspired corduroy jacket.",
+      "image": "download (18).jpg",
+      "salePrice": 69.99,
+      "price": 99.99,
+      "salePercent": 30
+    },
+    {
+      "id": 19,
+      "name": "Ski Jacket",
+      "description": "A high-performance ski jacket.",
+      "image": "download (19).jpg",
+      "salePrice": 149.99,
+      "price": 199.99,
+      "salePercent": 25
+    },
+    {
+      "id": 20,
+      "name": "Track Jacket",
+      "description": "A sporty track jacket.",
+      "image": "download (20).jpg",
+      "salePrice": 39.99,
+      "price": 59.99,
+      "salePercent": 33
+    }
+  ]
+}

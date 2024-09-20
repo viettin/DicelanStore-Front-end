@@ -1,0 +1,278 @@
+<main class="mainContainer_theme">
+    <div id="home-slider">
+        <div id="homepage_slider" class="owl-carousel owl-theme">
+            <div class="item">
+                <a href="https://dicelan.com/collections/all">
+                    <img class="owl-lazy" title="DICELAN" alt="DICELAN" src="assets/images/home-page-cover.jpeg">
+                </a>
+            </div>
+        </div>
+    </div>
+    <section id="section-banner-home" class="section section-banner">
+        <div class="container">
+            <div class="banner-home-outer">
+                <div class="row banner-home-inner">
+                    <div class="col-md-4 col-sm-4 col-xs-4 banner-home-item">
+                        <div class="effectTwo fade-box">
+                            <a href="https://dicelan.com/collections/ao-thun-t" title="ÁO THUN">
+                                <img class="img-responsive border-radius1 lazyloaded" src="assets/images/tshirts.jpg"
+                                    alt="ÁO THUN">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4 banner-home-item">
+                        <div class="effectTwo fade-box">
+                            <a href="https://dicelan.com/collections/jacket-tsun" title="OUTER">
+                                <img class="img-responsive border-radius1 lazyloaded" src="assets/images/jeans.jpg"
+                                    alt="OUTER">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4 banner-home-item">
+                        <div class="effectTwo fade-box">
+                            <a href="https://dicelan.com/collections/pants" title="PANTS">
+                                <img class="img-responsive border-radius1 lazyloaded" src="assets/images/outerwears.jpg"
+                                    alt="PANTS">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section-collection-home" class="section section-collection">
+        <div class="wrapper-heading-home  text-center">
+            <div class="container">
+                <div class="groupTitle-home">
+                    <h2>
+                        <a href="/collections/bestseller">
+                            SẢN PHẨM MỚI
+                        </a>
+                    </h2>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-collection-1">
+            <div class="container">
+                <div class="clearfix content-product-list owl-carousel" id="collection-slide">
+                    <p-carousel [value]="products" [numVisible]="4" [numScroll]="2" [circular]="true"
+                        [responsiveOptions]="responsiveOptions" autoplayInterval="300000" [showNavigators]="false">
+                        <ng-template let-product pTemplate="item">
+                                <div class="item" style="max-width:420px; height: 618px;">
+                                    <div class="pro-loop animation-tran" >
+                                        <div class="product-block product-resize site-animation">
+                                            <div class="product-img">
+                                                <div class="product-sale"><span>{{product.salePercent}}%</span></div>
+                                                <a href="/products/tsun-choice-tee-beige" title="{{product.name}}"
+                                                    class="image-resize fade-box">
+                                                    <picture>
+                                                        <img class="img-loop lazyloaded" alt="{{product.name}}"
+                                                            src="assets/file.hstatic.net/1000321269/product/{{product.image}}">
+                                                    </picture>
+                                                    <picture>
+                                                        <img class="img-loop img-hover lazyloaded"
+                                                            alt="{{product.name}}"
+                                                            src="assets/file.hstatic.net/1000321269/product/download (2).jpg">
+                                                    </picture>
+                                                </a>
+                                                <div class="productQuickView">
+                                                    <a class="btnProductQuickview -left" href="javascript:void(0)"
+                                                        data-handle="tsun-choice-tee-beige" title="Xem nhanh"></a>
+                                                        <a class="btnProductQuickview -right" href="javascript:void(0)"
+                                                        data-handle="tsun-choice-tee-beige" title="Xem nhanh"></a>
+                                                </div>
+                                                <div class="pro-price-mb">
+                                                    <span class="pro-price">{{product.salePrice}}</span>
+                                                    <span class="pro-price-del"><del
+                                                            class="compare-price">{{product.price}}</del></span>
+                                                </div>
+                                            </div>
+                                            <div class="product-detail clearfix">
+                                                <div class="box-pro-detail">
+                                                    <h3 class="pro-name">
+                                                        <a href="/products/tsun-choice-tee-beige"
+                                                            title="{{product.name}}">
+                                                            {{product.name}}
+                                                        </a>
+                                                    </h3>
+                                                    <div class="box-pro-prices">
+                                                        <p class="pro-price highlight">
+                                                            <span>{{product.salePrice}}</span>
+                                                            <span class="pro-price-del">
+                                                                <del class="compare-price">
+                                                                    {{product.price}}
+                                                                </del>
+                                                            </span>
+
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="variantColor">
+                                                    <ul>
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                        </ng-template>
+                    </p-carousel>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section-collection-info" class="section section-collection-info">
+        <div class="container">
+            <div class="rowFlexMargin">
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="collectionItem ">
+                        <div class="collectionImage effectFour fade-box">
+                            <a href="/collections/teetsun">
+                                <img class="img-responsive no-border lazyloaded" alt="Tops"
+                                    src="https://file.hstatic.net/1000321269/file/tops_5ce34a417c874c75843718bf634fb7cc.jpg">
+                            </a>
+                            <div class="collectionGroup">
+                                <h4 class="collTitle">
+                                    <a href="/collections/teetsun" title="Tops">Tops</a>
+                                </h4>
+                                <p class="colCount">70 sản phẩm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="collectionItem ">
+                        <div class="collectionImage effectFour fade-box">
+                            <a href="/collections/jacket-tsun">
+                                <img class="img-responsive no-border lazyloaded" alt="Outerwear"
+                                    src="https://file.hstatic.net/1000321269/file/outer_adc004342c284d229c05949734f51dac.jpg">
+                            </a>
+                            <div class="collectionGroup">
+                                <h4 class="collTitle">
+                                    <a href="/collections/jacket-tsun" title="Outerwear">Outerwear</a>
+                                </h4>
+                                <p class="colCount">12 sản phẩm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="collectionItem ">
+                        <div class="collectionImage effectFour fade-box">
+                            <a href="/collections/pants">
+                                <img class="img-responsive no-border lazyloaded" alt="Bottoms"
+                                    src="https://file.hstatic.net/1000321269/file/bottoms_3ce94f6e02b945f884941161e8f497e6.jpg">
+                            </a>
+                            <div class="collectionGroup">
+                                <h4 class="collTitle">
+                                    <a href="/collections/pants" title="Bottoms">Bottoms</a>
+                                </h4>
+                                <p class="colCount">6 sản phẩm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="collectionItem last">
+                        <div class="collectionImage effectFour fade-box">
+                            <a href="/collections/accessories">
+                                <img class="img-responsive no-border lazyloaded" alt="Accessories"
+                                    src="https://file.hstatic.net/1000321269/file/access_7daf368e308d4842aa5014463bcf3798.jpg">
+                            </a>
+                            <div class="collectionGroup">
+                                <h4 class="collTitle">
+                                    <a href="/collections/accessories" title="Accessories">Accessories</a>
+                                </h4>
+                                <p class="colCount">3 sản phẩm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section-collection-home" class="section section-collection">
+        <div class="wrapper-heading-home  text-center">
+            <div class="container">
+                <div class="groupTitle-home">
+                    <h2>
+                        <a href="/collections/hot-pick">
+                            BEST SELLER DICELAN
+                        </a>
+                    </h2>
+                    <p>Sản phẩm hot gợi ý bạn phải mua</p>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper-collection-1">
+            <div class="container">
+                <div class="clearfix content-product-list owl-carousel" id="collection-slide">
+                    <p-carousel [value]="productPairs" [numVisible]="4" [numScroll]="2" [circular]="false"
+                        [responsiveOptions]="responsiveOptions" [showNavigators]="false">
+                        <ng-template let-product pTemplate="item">
+                                <div class="item"  *ngFor="let item of product">
+                                    <div class="pro-loop animation-tran"  style="max-width:420px; height: 618px;">
+                                        <div class="product-block product-resize site-animation">
+                                            <div class="product-img">
+                                                <div class="product-sale"><span>{{item.salePercent}}%</span></div>
+                                                <a href="/products/tsun-choice-tee-beige" title="{{item.name}}"
+                                                    class="image-resize fade-box">
+                                                    <picture>
+                                                        <img class="img-loop lazyloaded" alt="{{item.name}}"
+                                                            src="assets/file.hstatic.net/1000321269/product/{{item.image}}">
+                                                    </picture>
+                                                    <picture>
+                                                        <img class="img-loop img-hover lazyloaded"
+                                                            alt="{{item.name}}"
+                                                            src="assets/file.hstatic.net/1000321269/product/{{item.image}}">
+                                                    </picture>
+                                                </a>
+                                                <div class="productQuickView">
+                                                    <a class="btnProductQuickview" href="javascript:void(0)"
+                                                        data-handle="tsun-choice-tee-beige" title="Xem nhanh"></a>
+                                                </div>
+                                                <div class="pro-price-mb">
+                                                    <span class="pro-price">{{item.salePrice}}</span>
+                                                    <span class="pro-price-del"><del
+                                                            class="compare-price">{{item.price}}</del></span>
+                                                </div>
+                                            </div>
+                                            <div class="product-detail clearfix">
+                                                <div class="box-pro-detail">
+                                                    <h3 class="pro-name">
+                                                        <a href="/products/tsun-choice-tee-beige"
+                                                            title="{{item.name}}">
+                                                            {{item.name}}
+                                                        </a>
+                                                    </h3>
+                                                    <div class="box-pro-prices">
+                                                        <p class="pro-price highlight">
+                                                            <span>{{item.salePrice}}</span>
+                                                            <span class="pro-price-del">
+                                                                <del class="compare-price">
+                                                                    {{item.price}}
+                                                                </del>
+                                                            </span>
+
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                        </ng-template>
+                    </p-carousel>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

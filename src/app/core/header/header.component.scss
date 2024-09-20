@@ -1,0 +1,18 @@
+.flexContainer-header {
+    justify-content: space-around;
+}
+
+.container {}
+
+.topbar-content {}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px
+}
+
+.row:after,
+.row:before {
+    display: table;
+    content: " "
+}

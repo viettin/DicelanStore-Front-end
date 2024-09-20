@@ -1,0 +1,74 @@
+/* product-management.component.scss */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+
+#name{
+  background: #ffffff;
+    padding: 0.75rem 0.75rem;
+    border: 1px solid #d1d5db;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+    appearance: none;
+    border-radius: 6px;
+}
+
+input.p-inputtext {
+  font-family: var(--font-family);
+  font-feature-settings: var(--font-feature-settings, normal);
+  font-size: 1rem;
+  color: #334155;
+  background: #ffffff;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #cbd5e1;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s, outline-color 0.2s;
+  appearance: none;
+  border-radius: 6px;
+}
+
+.status-badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+
+  &.in-stock {
+    background-color: #c8e6c9;
+    color: #1b5e20;
+  }
+
+  &.low-stock {
+    background-color: #fff9c4;
+    color: #f57f17;
+  }
+
+  &.out-of-stock {
+    background-color: #ffcdd2;
+    color: #b71c1c;
+  }
+
+  &.discontinued {
+    background-color: #d7ccc8;
+    color: #3e2723;
+  }
+
+  &.coming-soon {
+    background-color: #bbdefb;
+    color: #0d47a1;
+  }
+
+  &.sale {
+    background-color: #ffccbc;
+    color: #bf360c;
+  }
+
+  &.new-arrival {
+    background-color: #c8e6c9;
+    color: #1b5e20;
+  }
+
+  &.back-order {
+    background-color: #d1c4e9;
+    color: #4527a0;
+  }
+}
