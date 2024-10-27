@@ -1,11 +1,11 @@
 <div class="app-container">
-  <header>
-    <app-header></app-header>
-  </header>
+  <p-toast></p-toast>
+  <app-header></app-header>
   <main>
     <router-outlet></router-outlet>
   </main>
-  <footer>
-    <app-footer></app-footer>
-  </footer>
+  <app-footer *ngIf="!isAuthRoute"></app-footer>
+  <p-progressSpinner  class="loading"
+    strokeWidth="10" 
+    animationDuration="1s" *ngIf="loading" />
 </div>

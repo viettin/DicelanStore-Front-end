@@ -2,183 +2,501 @@
   "products": [
     {
       "id": 1,
-      "name": "Stylish Denim Jacket",
-      "description": "A classic denim jacket with a modern fit.",
-      "image": "download (1).jpg",
-      "salePrice": 59.99,
-      "price": 79.99,
-      "salePercent": 25
-    },
-    {
-      "id": 2,
-      "name": "Leather Biker Jacket",
-      "description": "A rugged and stylish leather jacket.",
-      "image": "download (2).jpg",
-      "salePrice": 199.99,
-      "price": 249.99,
+      "name": "Classic White T-Shirt",
+      "description": "A timeless white t-shirt made from 100% cotton.",
+      "image": "ao (1).jpg",
+      "salePrice": 19.99,
+      "price": 24.99,
       "salePercent": 20
     },
     {
+      "id": 2,
+      "name": "Denim Jacket",
+      "description": "A stylish denim jacket with a modern fit.",
+      "image": "ao (2).jpg",
+      "salePrice": 49.99,
+      "price": 59.99,
+      "salePercent": 17
+    },
+    {
       "id": 3,
-      "name": "Wool Blend Overcoat",
-      "description": "A warm and elegant wool blend overcoat.",
-      "image": "download (3).jpg",
-      "salePrice": 149.99,
-      "price": 199.99,
+      "name": "Striped Polo Shirt",
+      "description": "A comfortable polo shirt with bold stripes.",
+      "image": "ao (3).jpg",
+      "salePrice": 29.99,
+      "price": 39.99,
       "salePercent": 25
     },
     {
       "id": 4,
-      "name": "Hooded Parka",
-      "description": "A durable parka with a removable hood.",
-      "image": "download (4).jpg",
-      "salePrice": 99.99,
-      "price": 129.99,
-      "salePercent": 23
-    },
-    {
-      "id": 5,
-      "name": "Fleece Jacket",
-      "description": "A cozy fleece jacket for everyday wear.",
-      "image": "download (5).jpg",
-      "salePrice": 49.99,
-      "price": 69.99,
-      "salePercent": 29
-    },
-    {
-      "id": 6,
-      "name": "Quilted Bomber Jacket",
-      "description": "A stylish quilted bomber jacket.",
-      "image": "download (6).jpg",
-      "salePrice": 79.99,
-      "price": 99.99,
+      "name": "Slim Fit Jeans",
+      "description": "Slim fit jeans with a stretchable fabric for comfort.",
+      "image": "ao (4).jpg",
+      "salePrice": 39.99,
+      "price": 49.99,
       "salePercent": 20
     },
     {
-      "id": 7,
-      "name": "Rainproof Windbreaker",
-      "description": "A lightweight, rainproof windbreaker.",
-      "image": "download (7).jpg",
-      "salePrice": 39.99,
-      "price": 59.99,
-      "salePercent": 33
+      "id": 5,
+      "name": "Casual Hoodie",
+      "description": "A warm and cozy hoodie perfect for casual outings.",
+      "image": "ao (5).jpg",
+      "salePrice": 34.99,
+      "price": 44.99,
+      "salePercent": 22
     },
     {
-      "id": 8,
-      "name": "Trench Coat",
-      "description": "A timeless trench coat with a tailored fit.",
-      "image": "download (8).jpg",
-      "salePrice": 129.99,
-      "price": 179.99,
-      "salePercent": 28
-    },
-    {
-      "id": 9,
-      "name": "Puffer Jacket",
-      "description": "A warm and lightweight puffer jacket.",
-      "image": "download (9).jpg",
+      "id": 6,
+      "name": "Leather Biker Jacket",
+      "description": "A trendy leather biker jacket with a sleek design.",
+      "image": "ao (6).jpg",
       "salePrice": 89.99,
       "price": 119.99,
       "salePercent": 25
     },
     {
+      "id": 7,
+      "name": "V-Neck T-Shirt",
+      "description": "A simple and stylish v-neck t-shirt for everyday wear.",
+      "image": "ao (7).jpg",
+      "salePrice": 15.99,
+      "price": 19.99,
+      "salePercent": 20
+    },
+    {
+      "id": 8,
+      "name": "Plaid Button-Up Shirt",
+      "description": "A casual plaid button-up shirt made from soft cotton.",
+      "image": "ao (8).jpg",
+      "salePrice": 27.99,
+      "price": 34.99,
+      "salePercent": 20
+    },
+    {
+      "id": 9,
+      "name": "Chino Pants",
+      "description": "Classic chino pants for a sharp and clean look.",
+      "image": "ao (9).jpg",
+      "salePrice": 39.99,
+      "price": 49.99,
+      "salePercent": 20
+    },
+    {
       "id": 10,
-      "name": "Peacoat",
-      "description": "A double-breasted peacoat in a wool blend.",
-      "image": "download (10).jpg",
-      "salePrice": 139.99,
-      "price": 179.99,
-      "salePercent": 22
+      "name": "Bomber Jacket",
+      "description": "A lightweight bomber jacket with a sporty look.",
+      "image": "ao (10).jpg",
+      "salePrice": 59.99,
+      "price": 74.99,
+      "salePercent": 20
     },
     {
       "id": 11,
-      "name": "Field Jacket",
-      "description": "A military-inspired field jacket.",
-      "image": "download (11).jpg",
-      "salePrice": 99.99,
-      "price": 129.99,
+      "name": "Graphic Print T-Shirt",
+      "description": "A trendy t-shirt with a bold graphic print.",
+      "image": "ao (11).jpg",
+      "salePrice": 22.99,
+      "price": 29.99,
       "salePercent": 23
     },
     {
       "id": 12,
-      "name": "Varsity Jacket",
-      "description": "A retro-style varsity jacket.",
-      "image": "download (12).jpg",
-      "salePrice": 89.99,
-      "price": 109.99,
-      "salePercent": 18
-    },
-    {
-      "id": 13,
-      "name": "Sherpa-Lined Jacket",
-      "description": "A cozy sherpa-lined jacket for winter.",
-      "image": "download (13).jpg",
+      "name": "Tailored Blazer",
+      "description": "A sharp, tailored blazer for formal occasions.",
+      "image": "ao (12).jpg",
       "salePrice": 79.99,
       "price": 99.99,
       "salePercent": 20
     },
     {
-      "id": 14,
-      "name": "Blazer",
-      "description": "A sharp blazer for formal occasions.",
-      "image": "download (14).jpg",
-      "salePrice": 119.99,
-      "price": 159.99,
+      "id": 13,
+      "name": "Crew Neck Sweater",
+      "description": "A soft crew neck sweater, perfect for layering.",
+      "image": "ao (13).jpg",
+      "salePrice": 29.99,
+      "price": 39.99,
       "salePercent": 25
+    },
+    {
+      "id": 14,
+      "name": "Casual Shorts",
+      "description": "Lightweight casual shorts for warm weather.",
+      "image": "ao (14).jpg",
+      "salePrice": 24.99,
+      "price": 29.99,
+      "salePercent": 17
     },
     {
       "id": 15,
-      "name": "Down Jacket",
-      "description": "A down-filled jacket for extreme cold.",
-      "image": "download (15).jpg",
-      "salePrice": 129.99,
-      "price": 169.99,
-      "salePercent": 24
-    },
-    {
-      "id": 16,
-      "name": "Leather Blazer",
-      "description": "A sophisticated leather blazer.",
-      "image": "download (16).jpg",
-      "salePrice": 199.99,
-      "price": 249.99,
+      "name": "Oversized T-Shirt",
+      "description": "An oversized t-shirt for a relaxed look.",
+      "image": "ao (15).jpg",
+      "salePrice": 19.99,
+      "price": 24.99,
       "salePercent": 20
     },
     {
+      "id": 16,
+      "name": "Sports Joggers",
+      "description": "Comfortable joggers perfect for sports or casual wear.",
+      "image": "ao (16).jpg",
+      "salePrice": 34.99,
+      "price": 44.99,
+      "salePercent": 22
+    },
+    {
       "id": 17,
-      "name": "Lightweight Anorak",
-      "description": "A practical and lightweight anorak.",
-      "image": "download (17).jpg",
-      "salePrice": 49.99,
-      "price": 79.99,
-      "salePercent": 38
+      "name": "Flannel Shirt",
+      "description": "A cozy flannel shirt made for colder weather.",
+      "image": "ao (17).jpg",
+      "salePrice": 32.99,
+      "price": 39.99,
+      "salePercent": 18
     },
     {
       "id": 18,
-      "name": "Corduroy Jacket",
-      "description": "A vintage-inspired corduroy jacket.",
-      "image": "download (18).jpg",
-      "salePrice": 69.99,
-      "price": 99.99,
-      "salePercent": 30
-    },
-    {
-      "id": 19,
-      "name": "Ski Jacket",
-      "description": "A high-performance ski jacket.",
-      "image": "download (19).jpg",
-      "salePrice": 149.99,
-      "price": 199.99,
+      "name": "Skinny Fit Jeans",
+      "description": "Stylish skinny fit jeans with a trendy look.",
+      "image": "ao (18).jpg",
+      "salePrice": 44.99,
+      "price": 59.99,
       "salePercent": 25
     },
     {
+      "id": 19,
+      "name": "Linen Shirt",
+      "description": "A breathable linen shirt, perfect for warm days.",
+      "image": "ao (19).jpg",
+      "salePrice": 34.99,
+      "price": 44.99,
+      "salePercent": 22
+    },
+    {
       "id": 20,
-      "name": "Track Jacket",
-      "description": "A sporty track jacket.",
-      "image": "download (20).jpg",
-      "salePrice": 39.99,
+      "name": "Winter Parka",
+      "description": "A heavy-duty parka designed for winter conditions.",
+      "image": "ao (20).jpg",
+      "salePrice": 89.99,
+      "price": 119.99,
+      "salePercent": 25
+    },
+    {
+      "id": 21,
+      "name": "Casual Blazer",
+      "description": "A stylish casual blazer for a smart look.",
+      "image": "ao (21).jpg",
+      "salePrice": 69.99,
+      "price": 89.99,
+      "salePercent": 22
+    },
+    {
+      "id": 22,
+      "name": "Round Neck T-Shirt",
+      "description": "A basic round neck t-shirt for everyday wear.",
+      "image": "ao (22).jpg",
+      "salePrice": 12.99,
+      "price": 19.99,
+      "salePercent": 35
+    },
+    {
+      "id": 23,
+      "name": "Zip-Up Hoodie",
+      "description": "A comfortable zip-up hoodie with a relaxed fit.",
+      "image": "ao (23).jpg",
+      "salePrice": 34.99,
+      "price": 44.99,
+      "salePercent": 22
+    },
+    {
+      "id": 24,
+      "name": "Corduroy Jacket",
+      "description": "A classic corduroy jacket for a retro look.",
+      "image": "ao (24).jpg",
+      "salePrice": 49.99,
       "price": 59.99,
-      "salePercent": 33
+      "salePercent": 17
+    },
+    {
+      "id": 25,
+      "name": "Printed T-Shirt",
+      "description": "A soft t-shirt with a unique print.",
+      "image": "ao (25).jpg",
+      "salePrice": 18.99,
+      "price": 24.99,
+      "salePercent": 24
+    },
+    {
+      "id": 26,
+      "name": "Fleece Pullover",
+      "description": "A cozy fleece pullover for cold weather.",
+      "image": "ao (26).jpg",
+      "salePrice": 29.99,
+      "price": 39.99,
+      "salePercent": 25
+    },
+    {
+      "id": 27,
+      "name": "Formal Dress Shirt",
+      "description": "A formal dress shirt for business or events.",
+      "image": "ao (27).jpg",
+      "salePrice": 39.99,
+      "price": 49.99,
+      "salePercent": 20
+    },
+    {
+      "id": 28,
+      "name": "Cargo Pants",
+      "description": "Utility cargo pants with multiple pockets.",
+      "image": "ao (28).jpg",
+      "salePrice": 44.99,
+      "price": 54.99,
+      "salePercent": 18
+    },
+    {
+      "id": 29,
+      "name": "Long Sleeve Henley",
+      "description": "A long sleeve Henley shirt for casual wear.",
+      "image": "ao (29).jpg",
+      "salePrice": 24.99,
+      "price": 34.99,
+      "salePercent": 29
+    },
+    {
+      "id": 30,
+      "name": "Windbreaker Jacket",
+      "description": "A lightweight windbreaker jacket for outdoor activities.",
+      "image": "ao (30).jpg",
+      "salePrice": 49.99,
+      "price": 59.99,
+      "salePercent": 17
+    },
+    {
+      "id": 31,
+      "name": "V-Neck Sweater",
+      "description": "A classy V-neck sweater perfect for layering.",
+      "image": "ao (31).jpg",
+      "salePrice": 32.99,
+      "price": 39.99,
+      "salePercent": 18
+    },
+    {
+      "id": 32,
+      "name": "Oxford Dress Shirt",
+      "description": "A sleek Oxford dress shirt for formal wear.",
+      "image": "ao (32).jpg",
+      "salePrice": 49.99,
+      "price": 59.99,
+      "salePercent": 17
+    },
+    {
+      "id": 33,
+      "name": "Quilted Jacket",
+      "description": "A warm quilted jacket for chilly days.",
+      "image": "ao (33).jpg",
+      "salePrice": 59.99,
+      "price": 79.99,
+      "salePercent": 25
+    },
+    {
+      "id": 34,
+      "name": "Chino Shorts",
+      "description": "Comfortable chino shorts for summer.",
+      "image": "ao (34).jpg",
+      "salePrice": 22.99,
+      "price": 29.99,
+      "salePercent": 23
+    },
+    {
+      "id": 35,
+      "name": "Sleeveless Hoodie",
+      "description": "A casual sleeveless hoodie for workouts.",
+      "image": "ao (35).jpg",
+      "salePrice": 24.99,
+      "price": 29.99,
+      "salePercent": 17
+    },
+    {
+      "id": 36,
+      "name": "Slim Fit Blazer",
+      "description": "A modern slim fit blazer for a sharp look.",
+      "image": "ao (36).jpg",
+      "salePrice": 89.99,
+      "price": 109.99,
+      "salePercent": 18
+    },
+    {
+      "id": 37,
+      "name": "Graphic Hoodie",
+      "description": "A hoodie with a cool graphic design.",
+      "image": "ao (37).jpg",
+      "salePrice": 34.99,
+      "price": 44.99,
+      "salePercent": 22
+    },
+    {
+      "id": 38,
+      "name": "Rugged Work Boots",
+      "description": "Durable work boots for heavy-duty tasks.",
+      "image": "ao (38).jpg",
+      "salePrice": 89.99,
+      "price": 119.99,
+      "salePercent": 25
+    },
+    {
+      "id": 39,
+      "name": "Tailored Suit Pants",
+      "description": "Sharp tailored suit pants for formal occasions.",
+      "image": "ao (39).jpg",
+      "salePrice": 59.99,
+      "price": 79.99,
+      "salePercent": 25
+    },
+    {
+      "id": 40,
+      "name": "Tactical Cargo Shorts",
+      "description": "Tactical cargo shorts with extra durability.",
+      "image": "ao (40).jpg",
+      "salePrice": 29.99,
+      "price": 39.99,
+      "salePercent": 25
+    },
+    {
+      "id": 41,
+      "name": "Basic Black T-Shirt",
+      "description": "A basic black t-shirt, a wardrobe essential.",
+      "image": "ao (41).jpg",
+      "salePrice": 12.99,
+      "price": 19.99,
+      "salePercent": 35
+    },
+    {
+      "id": 42,
+      "name": "Puffer Vest",
+      "description": "A warm and lightweight puffer vest.",
+      "image": "ao (42).jpg",
+      "salePrice": 34.99,
+      "price": 44.99,
+      "salePercent": 22
+    },
+    {
+      "id": 43,
+      "name": "Cropped Jeans",
+      "description": "Trendy cropped jeans for a casual look.",
+      "image": "ao (43).jpg",
+      "salePrice": 39.99,
+      "price": 49.99,
+      "salePercent": 20
+    },
+    {
+      "id": 44,
+      "name": "Colorblock Hoodie",
+      "description": "A cool colorblock hoodie with a modern style.",
+      "image": "ao (44).jpg",
+      "salePrice": 29.99,
+      "price": 39.99,
+      "salePercent": 25
+    },
+    {
+      "id": 45,
+      "name": "Denim Overalls",
+      "description": "Classic denim overalls with adjustable straps.",
+      "image": "ao (45).jpg",
+      "salePrice": 49.99,
+      "price": 59.99,
+      "salePercent": 17
+    },
+    {
+      "id": 46,
+      "name": "Tech Fleece Joggers",
+      "description": "Joggers made with technical fleece for warmth and comfort.",
+      "image": "ao (46).jpg",
+      "salePrice": 44.99,
+      "price": 54.99,
+      "salePercent": 18
+    },
+    {
+      "id": 47,
+      "name": "Military Style Jacket",
+      "description": "A rugged military-style jacket for an edgy look.",
+      "image": "ao (47).jpg",
+      "salePrice": 59.99,
+      "price": 79.99,
+      "salePercent": 25
+    },
+    {
+      "id": 48,
+      "name": "Summer Linen Pants",
+      "description": "Lightweight linen pants for warm weather.",
+      "image": "ao (48).jpg",
+      "salePrice": 34.99,
+      "price": 44.99,
+      "salePercent": 22
+    },
+    {
+      "id": 49,
+      "name": "Basic Crew T-Shirt",
+      "description": "A comfortable crew neck t-shirt for daily wear.",
+      "image": "ao (49).jpg",
+      "salePrice": 14.99,
+      "price": 19.99,
+      "salePercent": 25
+    },
+    {
+      "id": 50,
+      "name": "Faux Leather Jacket",
+      "description": "A sleek faux leather jacket with a modern cut.",
+      "image": "ao (50).jpg",
+      "salePrice": 59.99,
+      "price": 79.99,
+      "salePercent": 25
+    },
+    {
+      "id": 51,
+      "name": "test",
+      "category": "tshirt",
+      "price": 55,
+      "salePercent": 5,
+      "stock": 55,
+      "material": "cotton",
+      "description": "test"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "username": "user1",
+      "password": "password1",
+      "role": "user"
+    },
+    {
+      "username": "a",
+      "password": "a",
+      "role": "user",
+      "id": 3
+    },
+    {
+      "username": "test",
+      "password": "123",
+      "role": "user",
+      "id": 4
+    },
+    {
+      "username": "Tins",
+      "password": "123456",
+      "role": "user",
+      "id": 5
+    },
+    {
+      "username": "a",
+      "password": "a",
+      "role": "user",
+      "id": 6
     }
   ]
 }

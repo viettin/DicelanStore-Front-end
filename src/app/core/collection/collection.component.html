@@ -1,0 +1,110 @@
+<div id="collection" class="collection-page">
+    <div class="main-content container">
+        <div class="row">
+            <div id="collection-body" class="wrap-collection-body clearfix">
+                <div class="wrap-filter">
+                    <div class="filterTagFullwidthClose"></div>
+                    <div class="box_sidebar">
+                        <div class="block left-module">
+                            <div class="filter_xs">
+                                <div class="layered ">
+                                    <div class="group-menu">
+                                        <div class="title_block layered_subtitle dropdown-filter">
+                                            <span>Danh mục sản phẩm</span>
+                                            <span class="icon-control">
+                                                <i class="fa fa-minus"></i>
+                                            </span>
+                                        </div>
+                                        <div class="layered-content">
+                                            <ul class="menuList-links">
+
+
+                                                <li class=" active ">
+                                                    <a href="/collections/all" title="Sản phẩm khuyến mãi">
+                                                        <span>Sản phẩm khuyến mãi</span>
+                                                    </a>
+                                                </li>
+
+
+
+                                                <li class=" active ">
+                                                    <a href="/collections/all" title="Tất cả sản phẩm">
+                                                        <span>Tất cả sản phẩm</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="wrap-collection-title row">
+                        <div class="heading-collection row">
+                            <div class="col-md-3 hidden-sm hidden-xs">
+                                <div class="filterTagFullwidthButton-desktop">
+                                    <i class="fa fa-sliders"></i>
+                                    <span>Bộ lọc</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                <h1 class="title">
+                                    Tất cả sản phẩm </h1>
+                            </div>
+                            <div class="col-md-3 col-sm-12 col-xs-12">
+                                <div class="outer-sort-filter">
+                                    <div class="filterTagFullwidthButton-mobile">
+                                        <i class="fa fa-sliders"></i>
+                                        <span>Bộ lọc </span>
+                                    </div>
+                                    <div class="collection-sortby">
+                                        <div class="sortby-option browse-tags option">
+                                            <label class="label-tt" for="sort-by"><i class="fa fa-sort-alpha-asc"
+                                                    aria-hidden="true"></i></label>
+                                            <span class="custom-dropdown custom-dropdown--grey ">
+                                                <select class="sort-by custom-dropdown__select boxstyle-mb" (change)="onSortChange($event)">
+
+                                                    <option value="price-ascending"
+                                                        data-filter="&amp;sortby=(price:product=asc)">Giá: Tăng dần
+                                                    </option>
+                                                    <option value="price-descending"
+                                                        data-filter="&amp;sortby=(price:product=desc)">Giá: Giảm dần
+                                                    </option>
+                                                    <option value="title-ascending"
+                                                        data-filter="&amp;sortby=(title:product=asc)">Tên: A-Z</option>
+                                                    <option value="title-descending"
+                                                        data-filter="&amp;sortby=(price:product=desc)">Tên: Z-A</option>
+                                                    <option value="created-ascending"
+                                                        data-filter="&amp;sortby=(updated_at:product=desc)">Cũ nhất
+                                                    </option>
+                                                    <option value="created-descending"
+                                                        data-filter="&amp;sortby=(updated_at:product=asc)">Mới nhất
+                                                    </option>
+                                                    <option value="best-selling"
+                                                        data-filter="&amp;sortby=(sold_quantity:product=desc)">Bán chạy
+                                                        nhất</option>
+                                                    <option value="quantity-descending">Tồn kho: Giảm dần</option>
+                                                </select>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row filter-here">
+                        <div class="content-product-list product-list filter clearfix">
+                            <div class="col-md-3 col-sm-4 col-xs-6 pro-loop" *ngFor="let item of products">
+                                <app-product-card [product]="item"></app-product-card>
+                            </div>
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <input type="text" class="hidden" id="coll-handle" value="(collectionid:product>0)">
+</div>

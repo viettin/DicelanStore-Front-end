@@ -13,23 +13,13 @@
     transition: 2s ease !important;
 }
 
-.product-block{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+::ng-deep p-carousel.p-element{
+    width: 100%;
 }
+
+
 
 ::ng-deep .p-carousel-indicators{
     display: none !important;
 }
 
-.productQuickView{
-    display: flex;
-}
-
-.compare-price {
-    color: #939393;
-    font-size: 13px;
-    margin-left: 5px;
-}

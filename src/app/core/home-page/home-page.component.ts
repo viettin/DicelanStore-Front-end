@@ -5,11 +5,13 @@ import { CommonModule } from '@angular/common';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { ButtonModule } from "primeng/button";
 import { SharedCommonModule } from '../../shared/shared.module';
+import { ProductCardComponent } from '../../products/product-card/product-card.component';
+import { RouterLink, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [SharedCommonModule],
+  imports: [SharedCommonModule, ProductCardComponent, RouterModule],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.scss'
 })
@@ -50,10 +52,6 @@ export class HomePageComponent {
   private getListProducts() {
     this.productService.getProducts().subscribe((data: Product[]) => {
       this.products = data;
-      for (let i = 0; i < this.products.length; i += 2) {
-        this.productPairs.push(this.products.slice(i, i + 2));
-      }
-        console.log("🚀 ~ HomePageComponent ~ this.productService.getProducts ~ this.productPairs:", this.productPairs)
     });
   }
 }

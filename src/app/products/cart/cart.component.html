@@ -1,0 +1,52 @@
+<div class="cart-container">
+    <p-card header="Your Cart {{ cart.length }} items" subheader="" [style]="{ width: '1200px' }">
+        <p-table [value]="cart" [tableStyle]="{'min-width': '60rem'}" [(selection)]="selectedProducts">
+            <ng-template pTemplate="summary">
+                <div class="cart-actions">
+                    <div class="left">
+                        <p-button label="Continue Shopping" styleClass="p-button-secondary"
+                            (onClick)="continueShopping()"></p-button>
+                    </div>
+                    <div class="right">
+                        <div class="cart-summary">
+                            <h3>Total: {{ totalPrice | currency }}</h3>
+                        </div>
+                        <p-button label="Proceed to Payment" (onClick)="redirectToPayment()"></p-button>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template pTemplate="header">
+                <tr>
+                    <th style="width: 4rem"><p-tableHeaderCheckbox /></th>
+                    <th>Sản phẩm</th>
+                    <th>Đơn Giá</th>
+                    <th>Số Lượng</th>
+                    <th>Tổng tiền</th>
+                    <th>Xóa</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-product>
+                <tr>
+                    <td>
+                        <p-tableCheckbox [value]="product" />
+                    </td>
+                    <td style="
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+"> <img [alt]="product.name" [src]="'data:image/jpeg;base64,'+product.image" width="100"
+                            class="shadow-4" />{{product.productName}}</td>
+                    <td>{{product.price | currency:'VND'}}</td>
+                    <td [style]="{width:'11rem'}"><p-inputNumber [(ngModel)]="product.quantity" [showButtons]="true"
+                            buttonLayout="horizontal" spinnerMode="horizontal" inputId="vertihorizontalcal"
+                            decrementButtonClass="p-button-secondary" incrementButtonClass="p-button-secondary"
+                            incrementButtonIcon="pi pi-plus" decrementButtonIcon="pi pi-minus" min="1" [max]="100" />
+                    </td>
+                    <td>{{product.price * product.quantity}}</td>
+                    <td><p-button icon="pi pi-trash" [rounded]="true" [text]="true" severity="danger"
+                            [style]="{color: 'red'}" /></td>
+                </tr>
+            </ng-template>
+        </p-table>
+    </p-card>
+</div>

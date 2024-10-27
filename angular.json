@@ -30,7 +30,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "primeng/resources/themes/aura-light-blue/theme.css",
+              "primeng/resources/primeng.css",
+              "primeicons/primeicons.css"
             ],
             "scripts": []
           },
@@ -91,7 +94,9 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/assets/fonts/base_styles.scss"
+              "primeng/resources/themes/aura-light-blue/theme.css",
+              "primeng/resources/primeng.css",
+              "primeicons/primeicons.css"
             ],
             "scripts": []
           }

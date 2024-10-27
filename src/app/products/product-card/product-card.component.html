@@ -1,0 +1,51 @@
+<div class="item">
+    <div class="pro-loop animation-tran">
+        <div class="product-block product-resize site-animation">
+            <div class="product-img">
+                <div class="product-sale"><span>{{product.discount}}%</span></div>
+                <a [routerLink]="'/products/' + product.id" [title]="product.name" class="image-resize fade-box">
+                    <picture>
+                    <img style="max-width:420px;height: 420px;" class="img-loop lazyloaded" [alt]="product.name" [src]="'data:image/jpeg;base64,'+product.firstImage" alt="Base64 Image" />
+                    </picture>
+                    <picture>
+                        <img style="max-width:420px;height: 420px;" class="img-loop lazyloaded" [alt]="product.name" [src]="'data:image/jpeg;base64,'+product.images[1]" alt="Base64 Image" />
+                    </picture>
+                </a>
+                <div class="productQuickView">
+                    <a class="btnProductQuickview -left"  [routerLink]=""
+                        [attr.data-handle]="product.id"  pTooltip="Thêm vào giỏ" 
+                        tooltipPosition="top" (click)="addToCart(product)"></a>
+                    <a class="btnProductQuickview -right"
+                        [attr.data-handle]="product.id"  pTooltip="Mua ngay" 
+                        tooltipPosition="top" ></a>
+                </div>
+                <div class="pro-price-mb">
+                    <span>{{getPrice(product)}}</span>
+                    <span class="pro-price-del"><del class="compare-price">{{product.price}}</del></span>
+                </div>
+            </div>
+            <div class="product-detail clearfix">
+                <div class="box-pro-detail">
+                    <h3 class="pro-name">
+                        <a [routerLink]="'/products/' + product.id" [title]="product.name">
+                            {{product.name}}
+                        </a>
+                    </h3>
+                    <div class="box-pro-prices">
+                        <p class="pro-price highlight">
+                            <span>{{getPrice(product)}}</span>
+                            <span class="pro-price-del">
+                                <del class="compare-price">
+                                    {{product.price}}
+                                </del>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="variantColor">
+                    <ul></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

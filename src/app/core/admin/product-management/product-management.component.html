@@ -1,0 +1,150 @@
+<!-- product-management.component.html -->
+<div class="product-management">
+  <p-toolbar styleClass="mb-4">
+   
+    <ng-template pTemplate="right">
+      <div class="card flex justify-content-center">
+        <p-toggleButton 
+            [(ngModel)]="isDeleted" 
+            onLabel="Included-Deleted" 
+            offLabel="Excluded-Deleted" 
+            (onChange)="changeToggle()"
+            />
+    </div>
+    </ng-template>
+    <ng-template pTemplate="left">
+      <button style="color:#fff;" pButton pRipple label="New Product" icon="pi pi-plus" class="p-button-primary mr-2"
+        (click)="openNew()"></button>
+    </ng-template>
+  </p-toolbar>
+  <p-table #dt [value]="products" [rows]="4" [paginator]="true" [globalFilterFields]="['name','category']"
+    [rowHover]="true" dataKey="id" currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+    [showCurrentPageReport]="true" scrollable="true" scrollHeight="600px">
+    <ng-template pTemplate="caption">
+      <div class="flex align-items-center justify-content-between">
+        <div class="flex">
+          <p-button label="Clear" [outlined]="true" icon="pi pi-filter-slash" (onClick)="clear(dt)" />
+          <span class="p-input-icon-left ml-auto">
+            <i class="pi pi-search"></i>
+            <input pInputText type="text" class="p-inputtext" [(ngModel)]="searchValue"
+              (input)="onGlobalFilter(dt, $event)" placeholder="Search keyword" />
+          </span>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template pTemplate="header">
+      <tr>
+        <th pSortableColumn="name">Tên <p-sortIcon field="name"></p-sortIcon></th>
+        <th pSortableColumn="category">Loại <p-sortIcon field="category"></p-sortIcon></th>
+        <th pSortableColumn="brand">Chất Liệu <p-sortIcon field="brand"></p-sortIcon></th>
+        <th pSortableColumn="price">Đơn Giá <p-sortIcon field="price"></p-sortIcon></th>
+        <th pSortableColumn="stock">Discount <p-sortIcon field="stock"></p-sortIcon></th>
+        <th pSortableColumn="status">Tồn Kho <p-sortIcon field="status"></p-sortIcon></th>
+        <th></th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-product>
+      <tr>
+        <td>
+          <span class="p-column-title">Name</span>
+          <img [src]="'data:image/jpeg;base64,'+product.firstImage" alt="Base64 Image" />
+          {{product.name}}
+        </td>
+        <td>
+          <span class="p-column-title">Category</span>
+          {{product.productTypeName}}
+        </td>
+        <td>
+          <span class="p-column-title">Material</span>
+          {{product.materialName}}
+        </td>
+        <td>
+          <span class="p-column-title">Price</span>
+          {{product.price | currency:'VND'}}
+        </td>
+        <td>
+          <span class="p-column-title">Discount</span>
+          {{product.discount}}%
+        </td>
+        <td>
+          <span class="p-column-title">Stock</span>
+          {{product.stockQuantity}}
+        </td>
+
+        <td>
+          <div class="p-button-set">
+            <p-button icon="pi pi-pencil" class="p-button-text" (click)="editProduct(product)" [rounded]="true" [text]="true" [raised]="true" severity="secondary" />
+            <p-button icon="pi pi-trash" class="p-button-text" (click)="deleteProduct(product)" [rounded]="true" [text]="true" [raised]="true" severity="danger" />
+            <p-button *ngIf="product.isDeleted" icon="pi pi-trash" class="p-button-text" (click)="restoreProduct(product)" [rounded]="true" [text]="true" [raised]="true" severity="success" />
+          </div>
+        </td>
+      </tr>
+    </ng-template>
+  </p-table>
+</div>
+<p-dialog [(visible)]="productDialog" [style]="{width: '750px'}" header="Product Details" [modal]="true"
+  styleClass="p-fluid" [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }">
+  <form [formGroup]="productForm" class="product-form-grid">
+    <div class="form-group name">
+      <label for="name">Name</label>
+      <input type="text" pInputText id="name" formControlName="name" required autofocus />
+      <small class="p-error" *ngIf="productForm.get('name')?.invalid && productForm.get('name')?.touched">Name is
+        required.</small>
+    </div>
+    <div class="form-group product-type">
+      <label for="productType">Product Type</label>
+      <p-dropdown id="productType" [options]="productTypes" formControlName="producttypeid" optionLabel="name"
+        optionValue="id" placeholder="Select Product Type"></p-dropdown>
+      <small class="p-error"
+        *ngIf="productForm.get('productType')?.invalid && productForm.get('productType')?.touched">Product Type is
+        required.</small>
+    </div>
+    <div class="form-group description">
+      <label for="description">Description</label>
+      <textarea id="description" pInputTextarea formControlName="description" rows="3" required></textarea>
+      <small class="p-error"
+        *ngIf="productForm.get('description')?.invalid && productForm.get('description')?.touched">Description is
+        required.</small>
+    </div>
+    <div class="form-group price">
+      <label for="price">Price</label>
+      <p-inputNumber id="price" formControlName="price" mode="currency" currency="USD" locale="en-US"></p-inputNumber>
+      <small class="p-error" *ngIf="productForm.get('price')?.invalid && productForm.get('price')?.touched">Valid
+        price is required.</small>
+    </div>
+    <div class="form-group sale-percent">
+      <label for="salePercent">Sale Percent</label>
+      <p-inputNumber id="salePercent" formControlName="discount" suffix="%" [min]="0" [max]="100"></p-inputNumber>
+      <small class="p-error"
+        *ngIf="productForm.get('salePercent')?.invalid && productForm.get('salePercent')?.touched">Valid sale percent
+        is required (0-100).</small>
+    </div>
+    <div class="form-group stock-quantity">
+      <label for="stockQuantity">Stock Quantity</label>
+      <p-inputNumber formControlName="stockquantity" id="stockQuantity"></p-inputNumber>
+      <small class="p-error"
+        *ngIf="productForm.get('stockQuantity')?.invalid && productForm.get('stockQuantity')?.touched">Valid stock
+        quantity is required.</small>
+    </div>
+    <div class="form-group material">
+      <label for="material">Material</label>
+      <p-dropdown id="material" [options]="materials" formControlName="materialid" optionLabel="name" optionValue="id"
+        placeholder="Select Material"></p-dropdown>
+      <small class="p-error"
+        *ngIf="productForm.get('material')?.invalid && productForm.get('material')?.touched">Material is
+        required.</small>
+    </div>
+    <div class="form-group image">
+      <label for="image">Product Image</label>
+      <p-fileUpload name="Images[]" url="https://www.primefaces.org/cdn/api/upload.php" (onSelect)="onUpload($event)"
+        mode="advanced" [showUploadButton]="false" [multiple]="true" accept="image/*" maxFileSize="1000000">
+      </p-fileUpload>
+    </div>
+  </form>
+  <ng-template pTemplate="footer">
+    <p-button label="Cancel" icon="pi pi-times" class="p-button-text" (click)="hideDialog()" [rounded]="true" [text]="true" [raised]="true" severity="danger" />
+    <p-button label="Save" icon="pi pi-check" class="p-button-text" (click)="saveProduct()" [rounded]="true" [text]="true" [raised]="true" severity="success" />
+    <!-- [disabled]="productForm.invalid" -->
+  </ng-template>
+</p-dialog>
+<p-confirmDialog [style]="{width: '450px'}"></p-confirmDialog>

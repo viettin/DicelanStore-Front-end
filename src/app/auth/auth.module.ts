@@ -30,7 +30,8 @@ const routes: Routes = [
     PasswordModule,
     ToastModule,
     SharedCommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    RouterModule
   ],
   providers: []
 })

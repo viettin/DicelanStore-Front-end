@@ -1,0 +1,94 @@
+:host {
+    display: flex;
+    justify-content: center;
+
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+tr,td,th {
+    text-align: center;
+}
+
+.wrapper {}
+
+.absolute {}
+
+
+.grid {
+    &-nogutter {
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+    }
+}
+
+.col {
+    &-12 {}
+}
+
+.product {
+    &-cart {}
+
+    &-image {
+        width: 30rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        .p-tag-value {
+            font-size: 14px;
+        }
+
+        img {
+            width: 15rem;
+        }
+    }
+
+    &-info {}
+
+    &-price {}
+}
+
+::ng-deep .p-element {
+    &.absolute {
+        position: absolute;
+    }
+}
+
+::ng-deep span.p-inputnumber {
+   input{
+    width: 6rem;
+    text-align: center;
+   }
+}
+
+.left {}
+
+.right {}
+
+.cart {
+    &-actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    &-summary {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+::ng-deep.p-button-secondary{
+    color: #4b5563;
+    background: #ffffff;
+    border: 1px solid #d1d5db;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+}

@@ -1,0 +1,126 @@
+/* product-management.component.scss */
+:host {
+  flex: 1;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#name {
+  background: #ffffff;
+  padding: 0.75rem 0.75rem;
+  border: 1px solid #d1d5db;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+  appearance: none;
+  border-radius: 6px;
+}
+
+::ng-deep input[type=file] {
+  display: none !important;
+}
+
+::ng-deep.p-button {
+  &-danger {
+    border: 1px solid #ef4444 !important;
+    color: #ef4444 !important;
+  }
+
+  &-secondary {
+    border: 1px solid #3B82F6 !important;
+    color: #3B82F6 !important;
+  }
+  &-success{
+    border: 1px solid #22c55e!important;
+    color: #22c55e !important;
+  }
+}
+
+img {
+  width: 100px;
+}
+
+
+::ng-deep.p-inputtext {
+  font-family: var(--font-family);
+  font-feature-settings: var(--font-feature-settings, normal);
+  font-size: 1rem;
+  color: #334155;
+  background: #ffffff;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #cbd5e1;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s, outline-color 0.2s;
+  appearance: none;
+  border-radius: 6px;
+  padding-left: 2.5rem;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 2px 0 rgba(18, 18, 23, 0.05);
+  font-size: 16px;
+}
+
+.product-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.form-group small {
+  margin-top: 0.25rem;
+}
+
+
+.description,
+.image {
+  grid-column: 1 / -1;
+}
+
+.name,
+.price,
+.sale-percent,
+.stock-quantity,
+.material,
+.product-type {
+  grid-column: span 1;
+}
+
+@media (max-width: 768px) {
+  .product-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .price,
+  .sale-percent,
+  .stock-quantity,
+  .material,
+  .product-type {
+    grid-column: 1 / -1;
+  }
+}
+
+:host ::ng-deep {
+  .p-dialog {
+    max-width: 90vw;
+  }
+
+  .p-dialog .p-dialog-content {
+    padding: 2rem;
+  }
+
+  .p-inputnumber,
+  .p-dropdown,
+  .p-inputtextarea {
+    width: 100%;
+  }
+
+  .p-fileupload .p-fileupload-content {
+    padding: 1rem;
+  }
+}

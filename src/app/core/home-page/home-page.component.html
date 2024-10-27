@@ -2,8 +2,8 @@
     <div id="home-slider">
         <div id="homepage_slider" class="owl-carousel owl-theme">
             <div class="item">
-                <a href="https://dicelan.com/collections/all">
-                    <img class="owl-lazy" title="DICELAN" alt="DICELAN" src="assets/images/home-page-cover.jpeg">
+                <a  [routerLink]="['/collections/all']" >
+                    <img class="owl-lazy" title="Dicelan" alt="Dicelan" src="assets/images/slide3.jpg">
                 </a>
             </div>
         </div>
@@ -14,7 +14,7 @@
                 <div class="row banner-home-inner">
                     <div class="col-md-4 col-sm-4 col-xs-4 banner-home-item">
                         <div class="effectTwo fade-box">
-                            <a href="https://dicelan.com/collections/ao-thun-t" title="ÁO THUN">
+                            <a [routerLink]="['/collections/ao-thun-t']" title="ÁO THUN">
                                 <img class="img-responsive border-radius1 lazyloaded" src="assets/images/tshirts.jpg"
                                     alt="ÁO THUN">
                             </a>
@@ -22,7 +22,7 @@
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-4 banner-home-item">
                         <div class="effectTwo fade-box">
-                            <a href="https://dicelan.com/collections/jacket-tsun" title="OUTER">
+                            <a [routerLink]="['/collections/jacket-tsun']" title="OUTER">
                                 <img class="img-responsive border-radius1 lazyloaded" src="assets/images/jeans.jpg"
                                     alt="OUTER">
                             </a>
@@ -30,7 +30,7 @@
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-4 banner-home-item">
                         <div class="effectTwo fade-box">
-                            <a href="https://dicelan.com/collections/pants" title="PANTS">
+                            <a [routerLink]="['/collections/pants']" title="PANTS">
                                 <img class="img-responsive border-radius1 lazyloaded" src="assets/images/outerwears.jpg"
                                     alt="PANTS">
                             </a>
@@ -40,12 +40,12 @@
             </div>
         </div>
     </section>
-    <section id="section-collection-home" class="section section-collection">
+    <section id="section-collection-home-new" class="section section-collection">
         <div class="wrapper-heading-home  text-center">
             <div class="container">
                 <div class="groupTitle-home">
                     <h2>
-                        <a href="/collections/bestseller">
+                        <a [routerLink]="['/collections/bestseller']">
                             SẢN PHẨM MỚI
                         </a>
                     </h2>
@@ -57,67 +57,9 @@
             <div class="container">
                 <div class="clearfix content-product-list owl-carousel" id="collection-slide">
                     <p-carousel [value]="products" [numVisible]="4" [numScroll]="2" [circular]="true"
-                        [responsiveOptions]="responsiveOptions" autoplayInterval="300000" [showNavigators]="false">
-                        <ng-template let-product pTemplate="item">
-                                <div class="item" style="max-width:420px; height: 618px;">
-                                    <div class="pro-loop animation-tran" >
-                                        <div class="product-block product-resize site-animation">
-                                            <div class="product-img">
-                                                <div class="product-sale"><span>{{product.salePercent}}%</span></div>
-                                                <a href="/products/tsun-choice-tee-beige" title="{{product.name}}"
-                                                    class="image-resize fade-box">
-                                                    <picture>
-                                                        <img class="img-loop lazyloaded" alt="{{product.name}}"
-                                                            src="assets/file.hstatic.net/1000321269/product/{{product.image}}">
-                                                    </picture>
-                                                    <picture>
-                                                        <img class="img-loop img-hover lazyloaded"
-                                                            alt="{{product.name}}"
-                                                            src="assets/file.hstatic.net/1000321269/product/download (2).jpg">
-                                                    </picture>
-                                                </a>
-                                                <div class="productQuickView">
-                                                    <a class="btnProductQuickview -left" href="javascript:void(0)"
-                                                        data-handle="tsun-choice-tee-beige" title="Xem nhanh"></a>
-                                                        <a class="btnProductQuickview -right" href="javascript:void(0)"
-                                                        data-handle="tsun-choice-tee-beige" title="Xem nhanh"></a>
-                                                </div>
-                                                <div class="pro-price-mb">
-                                                    <span class="pro-price">{{product.salePrice}}</span>
-                                                    <span class="pro-price-del"><del
-                                                            class="compare-price">{{product.price}}</del></span>
-                                                </div>
-                                            </div>
-                                            <div class="product-detail clearfix">
-                                                <div class="box-pro-detail">
-                                                    <h3 class="pro-name">
-                                                        <a href="/products/tsun-choice-tee-beige"
-                                                            title="{{product.name}}">
-                                                            {{product.name}}
-                                                        </a>
-                                                    </h3>
-                                                    <div class="box-pro-prices">
-                                                        <p class="pro-price highlight">
-                                                            <span>{{product.salePrice}}</span>
-                                                            <span class="pro-price-del">
-                                                                <del class="compare-price">
-                                                                    {{product.price}}
-                                                                </del>
-                                                            </span>
-
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="variantColor">
-                                                    <ul>
-
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                   
-                                </div>
+                        [responsiveOptions]="responsiveOptions" autoplayInterval="5000" [showNavigators]="false">
+                        <ng-template let-product pTemplate="item" >
+                            <app-product-card [product]="product"></app-product-card>
                         </ng-template>
                     </p-carousel>
                 </div>
@@ -130,7 +72,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-3">
                     <div class="collectionItem ">
                         <div class="collectionImage effectFour fade-box">
-                            <a href="/collections/teetsun">
+                            <a [routerLink]="['/collections/teetsun']">
                                 <img class="img-responsive no-border lazyloaded" alt="Tops"
                                     src="https://file.hstatic.net/1000321269/file/tops_5ce34a417c874c75843718bf634fb7cc.jpg">
                             </a>
@@ -197,13 +139,13 @@
             </div>
         </div>
     </section>
-    <section id="section-collection-home" class="section section-collection">
+    <section id="section-collection-home-best" class="section section-collection">
         <div class="wrapper-heading-home  text-center">
             <div class="container">
                 <div class="groupTitle-home">
                     <h2>
                         <a href="/collections/hot-pick">
-                            BEST SELLER DICELAN
+                            BEST SELLER Dicelan
                         </a>
                     </h2>
                     <p>Sản phẩm hot gợi ý bạn phải mua</p>
@@ -213,62 +155,10 @@
         <div class="wrapper-collection-1">
             <div class="container">
                 <div class="clearfix content-product-list owl-carousel" id="collection-slide">
-                    <p-carousel [value]="productPairs" [numVisible]="4" [numScroll]="2" [circular]="false"
-                        [responsiveOptions]="responsiveOptions" [showNavigators]="false">
-                        <ng-template let-product pTemplate="item">
-                                <div class="item"  *ngFor="let item of product">
-                                    <div class="pro-loop animation-tran"  style="max-width:420px; height: 618px;">
-                                        <div class="product-block product-resize site-animation">
-                                            <div class="product-img">
-                                                <div class="product-sale"><span>{{item.salePercent}}%</span></div>
-                                                <a href="/products/tsun-choice-tee-beige" title="{{item.name}}"
-                                                    class="image-resize fade-box">
-                                                    <picture>
-                                                        <img class="img-loop lazyloaded" alt="{{item.name}}"
-                                                            src="assets/file.hstatic.net/1000321269/product/{{item.image}}">
-                                                    </picture>
-                                                    <picture>
-                                                        <img class="img-loop img-hover lazyloaded"
-                                                            alt="{{item.name}}"
-                                                            src="assets/file.hstatic.net/1000321269/product/{{item.image}}">
-                                                    </picture>
-                                                </a>
-                                                <div class="productQuickView">
-                                                    <a class="btnProductQuickview" href="javascript:void(0)"
-                                                        data-handle="tsun-choice-tee-beige" title="Xem nhanh"></a>
-                                                </div>
-                                                <div class="pro-price-mb">
-                                                    <span class="pro-price">{{item.salePrice}}</span>
-                                                    <span class="pro-price-del"><del
-                                                            class="compare-price">{{item.price}}</del></span>
-                                                </div>
-                                            </div>
-                                            <div class="product-detail clearfix">
-                                                <div class="box-pro-detail">
-                                                    <h3 class="pro-name">
-                                                        <a href="/products/tsun-choice-tee-beige"
-                                                            title="{{item.name}}">
-                                                            {{item.name}}
-                                                        </a>
-                                                    </h3>
-                                                    <div class="box-pro-prices">
-                                                        <p class="pro-price highlight">
-                                                            <span>{{item.salePrice}}</span>
-                                                            <span class="pro-price-del">
-                                                                <del class="compare-price">
-                                                                    {{item.price}}
-                                                                </del>
-                                                            </span>
-
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                               
-                                            </div>
-                                        </div>
-                                    </div>
-                                   
-                                </div>
+                    <p-carousel [value]="products" [numVisible]="4" [numScroll]="2" [circular]="true"
+                        [responsiveOptions]="responsiveOptions" autoplayInterval="3000" [showNavigators]="false">
+                        <ng-template let-product pTemplate="item" >
+                            <app-product-card [product]="product"></app-product-card>
                         </ng-template>
                     </p-carousel>
                 </div>

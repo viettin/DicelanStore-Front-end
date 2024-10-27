@@ -1,13 +1,15 @@
 /* Google Fonts - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 @import "primeicons/primeicons.css";
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-.container{
+
+.container {
     width: 100%;
     display: flex;
     align-items: center;
@@ -15,53 +17,85 @@
     column-gap: 30px;
 
 }
-.form{
-    max-width: 430px;
+
+.input-field{
+    text-align: left;
+    .error-message{
+        color: rgb(192, 26, 26);
+    }
+}
+
+.form {
+    max-width: 1200px;
     width: 100%;
     padding: 30px;
     border-radius: 6px;
     background: #FFF;
-}
-.forms.show-signup .form.signup{
-    opacity: 1;
-    pointer-events: auto;
-    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    box-shadow:rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+    rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    input {
+        height: 3rem !important;
+    }
 }
 
-header{
+
+.user, .address{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    
+}
+
+header {
     font-size: 28px;
     font-weight: 600;
     color: #232836;
     text-align: center;
 }
-form{
-    margin-top: 30px;
+
+.register-form {
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem 10rem;
 }
-.form .field{
+
+.form .field {
     position: relative;
-    height: 50px;
+
     width: 100%;
-    margin-top: 20px;
     border-radius: 6px;
+    flex: 1 1 45%;
+
+    input,
+    button {
+        height: 4rem !important;
+        width: 100%;
+        border: none;
+        font-size: 16px;
+        font-weight: 400;
+        border-radius: 6px;
+    }
+
+    input {
+        outline: none;
+        padding: 0 15px;
+        border: 1px solid#CACACA;
+
+        &.invalid {
+            border: 1px solid rgb(192, 26, 26) !important;
+        }
+
+        &:focus {
+            border-bottom-width: 2px;
+        }
+    }
 }
-.field input,
-.field button{
-    height: 100%;
-    width: 100%;
-    border: none;
-    font-size: 16px;
-    font-weight: 400;
-    border-radius: 6px;
-}
-.field input{
-    outline: none;
-    padding: 0 15px;
-    border: 1px solid#CACACA;
-}
-.field input:focus{
-    border-bottom-width: 2px;
-}
-.eye-icon{
+
+.eye-icon {
     position: absolute;
     top: 50%;
     right: 10px;
@@ -71,40 +105,56 @@ form{
     cursor: pointer;
     padding: 5px;
 }
-.field button{
+
+.field button {
     color: #fff;
     background-color: #0171d3;
     transition: all 0.3s ease;
     cursor: pointer;
+ 
 }
-.field button:hover{
+
+.field button:hover {
     background-color: #016dcb;
 }
-.form-link{
-    text-align: center;
-    margin-top: 10px;
+
+label {
+    text-align: left;
+    font-weight: 400;
 }
+
+
+.form-link {
+    text-align: left;
+    margin-top: 1.5em;
+    flex: 1 1 45%;
+}
+
 .form-link span,
-.form-link a{
+.form-link a {
     font-size: 14px;
     font-weight: 400;
     color: #232836;
 }
-.form a{
+
+.form a {
     color: #0171d3;
     text-decoration: none;
 }
-.form-content a:hover{
+
+.form-content a:hover {
     text-decoration: underline;
 }
-.line{
+
+.line {
     position: relative;
     height: 1px;
     width: 100%;
     margin: 36px 0;
     background-color: #d4d4d4;
 }
-.line::before{
+
+.line::before {
     content: 'Or';
     position: absolute;
     top: 50%;
@@ -114,25 +164,27 @@ form{
     color: #8b8b8b;
     padding: 0 15px;
 }
-.media-options a{
+
+.media-options a {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-a.facebook{
+
+a.facebook {
     color: #fff !important;
     background-color: #4267b2;
 }
 
 
-.facebook-icon{
+.facebook-icon {
     position: absolute;
     top: 50%;
     left: 15px;
     transform: translateY(-50%);
 }
 
-img.google-img{
+img.google-img {
     position: absolute;
     top: 50%;
     left: 9px;
@@ -141,18 +193,41 @@ img.google-img{
     width: 20px;
     object-fit: cover;
 }
-a.google{
+
+a.google {
     border: 1px solid #CACACA;
 }
-a.google span{
+
+a.google span {
     font-weight: 500;
     opacity: 0.6;
     color: #232836;
 }
 
 @media screen and (max-width: 400px) {
-    .form{
+    .form {
         padding: 20px 10px;
     }
-    
+
+}
+
+::ng-deep .p-fieldset {
+    padding: 0 1.125rem 1.125rem 1.125rem !important;
+    margin: 0;
+    border: 1px solid #e2e8f0 !important;
+    background: #ffffff;
+    color: #334155;
+    border-radius: 6px;
+
+    &-legend>span {
+        border: 1px solid gray;
+        border-radius: 6px;
+        text-align: left;
+        justify-content: flex-start;
+    }
+}
+
+
+::ng-deep p-fieldset.p-element {
+    flex: 1 1 45% !important;
 }

@@ -3,8 +3,23 @@
     text-align: center;
     font-family: Roboto, Helvetica Neue, sans-serif;
     font-size: 1.5rem;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column
   }
-  
+  p-progressSpinner.loading{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    z-index: 999999999;
+    backdrop-filter: blur(10px);
+  }
+   
   header {
     background-color: #f8f9fa;
     padding: 1rem;
@@ -23,10 +38,12 @@
   
   main {
     padding: 2rem;
+    margin-top: 7.25rem;
+    flex: 1 1;
   }
 
   .compare-price{
-    color: #939393;
+    color: #939393 !important; 
     font-size: 13px;
     margin-left: 5px;
   }

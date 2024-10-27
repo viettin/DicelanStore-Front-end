@@ -1,0 +1,23 @@
+:host{
+    max-width:420px; 
+    height: 500px;
+    position:relative;
+    display: block;
+}
+.product-block{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.productQuickView{
+    display: flex;
+    cursor: pointer;
+}
+
+.compare-price {
+    color: #939393;
+    font-size: 13px;
+    margin-left: 5px;
+}

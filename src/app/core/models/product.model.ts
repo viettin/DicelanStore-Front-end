@@ -1,5 +1,5 @@
 export interface Product {
-  id?: number;
+  id: number;
   name: string;
   description?: string;
   category: FashionCategory;
@@ -7,6 +7,8 @@ export interface Product {
   stock: number;
   status: ProductStatus;
   image?: string;
+  firstimage?: string;
+  [index: string]: any;
 }
 export type FashionCategory = 
   'tops' | 'bottoms' | 'dresses' | 'outerwear' | 'footwear' | 

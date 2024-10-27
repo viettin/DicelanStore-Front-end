@@ -12,3 +12,14 @@ export const getOrderError = createSelector(
   getOrderState,
   state => state.error
 );
+
+export const getCart = createSelector(
+  getOrderState,
+  state => state.cart
+);
+
+export const getProductsForPayment = createSelector(
+  getOrderState,
+  state => state.selectedForPayment
+);
+

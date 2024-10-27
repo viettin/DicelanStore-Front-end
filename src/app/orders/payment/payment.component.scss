@@ -1,0 +1,115 @@
+:host {
+    height: 100%;
+    display: block;
+}
+
+.field-input {
+    background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);
+    border-radius: 4px;
+    color: rgb(51, 51, 51);
+    display: block;
+    padding: 13.16px 39.2px 13.16px 11.2px;
+    transition: 0.2s ease-out;
+    word-break: normal;
+    appearance: none;
+    font: 400 14px "Helvetica Neue", sans-serif;
+    width: 100%;
+    border: 1px solid gray;
+
+    &-btn-wrapper {
+        display: flex;
+        gap: 2rem;
+        align-items: flex-end;
+
+        .btn-default {
+            height: 4.5rem;
+        }
+    }
+}
+
+.wrap {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: row-reverse;
+    margin: 0px 10rem;
+    zoom: 1;
+    width: inherit;
+    box-sizing: content-box;
+    color: rgb(115, 115, 115);
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    line-height: 18.2px;
+    background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);
+    text-align: left;
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        padding-right: 66px;
+        width: 40%;
+        color: rgb(115, 115, 115);
+        font-family: "Helvetica Neue", sans-serif;
+        font-size: 14px;
+        line-height: 18.2px;
+        background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);
+
+        .fieldset {
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: space-between;
+
+            form {
+                width: 100%;
+            }
+
+        }
+
+        .field {
+            &-required {
+                width: 100%
+            }
+
+            &-input-wrapper {}
+
+            &-label {}
+
+            &-input {}
+
+            &-two-thirds {
+                width: 60%;
+            }
+
+            &-third {
+                width: 30%;
+            }
+        }
+    }
+
+    .sidebar {
+        width: 40%;
+    }
+
+    #form_update_location_customer_shipping {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem 1rem;
+        margin-top: 2rem;
+        justify-content: space-between;
+
+        >div {
+            width: 45%;
+        }
+    }
+}
+
+::ng-deep.p-inputtext {
+    padding: 1.25rem 0 1.25rem 0.5rem;
+}
+
+::ng-deep.p-dropdown {
+    width: 100%;
+}

@@ -6,23 +6,22 @@
         <div class="form login">
             <div class="form-content">
                 <header>Login</header>
-                <form action="#">
+                <div class="login-form">
                     <div class="field input-field">
-                        <input type="email" placeholder="Email" class="input">
+                        <input type="text" placeholder="Username" class="input" [(ngModel)]="username" (keyup.enter)="onLogin()" >
                     </div>
-                    <div class="field input-field">
-                        <input type="password" placeholder="Password" class="password">
-                        <i class='bx bx-hide eye-icon'></i>
+                    <div class="field input-field" >
+                        <input type="password" placeholder="Create password" class="password"  [(ngModel)]="password" (keyup.enter)="onLogin()" >
                     </div>
                     <div class="form-link">
                         <a routerLink="/register" class="forgot-pass">Forgot password?</a>
                     </div>
-                    <div class="field button-field">
-                        <button>Login</button>
+                    <div class="field button-field" (keyup.enter)="onLogin()">
+                        <button (click)="onLogin()">Login</button>
                     </div>
-                </form>
+                </div>
                 <div class="form-link">
-                    <span>Don't have an account? <a  href="auth/register" class="link signup-link">Signup</a></span>
+                    <span>Don't have an account? <a  [routerLink]="['/auth/register']" routerLinkActive="active" class="link signup-link">Signup</a></span>
                 </div>
             </div>
             <div class="line"></div>

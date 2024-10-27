@@ -1,43 +1,4 @@
-# Getting Started with DicelanStore-Front-end
-
-## Required Software:
-1. **Node.js** - v20.13.1
-2. **Visual Studio Code**
-3. **GitBash**
-
----
-
-## Setup Instructions:
-
-### 1. Install all the required software:
-- Download and install [Node.js](https://nodejs.org/en/)
-- Install [Visual Studio Code](https://code.visualstudio.com/)
-- Install [GitBash](https://git-scm.com/downloads)
-
-### 2. Download the  code:
-- Clone the repository from GitHub Repository:
-  ```bash
-  git clone https://github.com/viettin/DicelanStore-Front-end.git
-  ```
-
-### 3. Install the dependencies:
-- Open a terminal (GitBash or VSCode terminal) and navigate to the project directory.
-- Run the following command:
-  ```bash
-  npm install
-  ```
-
-### 4. Start the JSON server (if applicable):
-- Before starting the application, run the following command to start the JSON server:
-  ```bash
-  npm run start:json-server
-  ```
-
-### 5. Serve the application:
-- Start the application with the following command:
-  ```bash
-  npm run start
-  ```
+# ECommerce
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
 

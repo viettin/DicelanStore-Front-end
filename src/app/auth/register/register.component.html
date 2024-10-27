@@ -1,40 +1,59 @@
+<p-toast></p-toast>
 <div class="login-container p-d-flex p-flex-column p-ai-center p-p-4">
 <section class="container forms">
         <!-- Signup Form -->
         <div class="form signup">
             <div class="form-content">
                 <header>Signup</header>
-                <form action="#">
-                    <div class="field input-field">
-                        <input type="email" placeholder="Email" class="input">
-                    </div>
-                    <div class="field input-field">
-                        <input type="password" placeholder="Create password" class="password">
-                    </div>
-                    <div class="field input-field">
-                        <input type="password" placeholder="Confirm password" class="password">
-                        <i class='bx bx-hide eye-icon'></i>
-                    </div>
+                <div class="register-form">
+                    <p-fieldset legend="User Info">
+                        <div class="user">
+                            <div class="field input-field">
+                                <input type="text" placeholder="Username" class="input" [(ngModel)]="username" >
+                            </div>
+                            <div class="field input-field">
+                                <input type="email" placeholder="Email" class="input" [(ngModel)]="email">
+                            </div>
+                            <div class="field input-field">
+                                <input type="text" placeholder="Full Name" class="input" [(ngModel)]="name" >
+                            </div>
+                            <div class="field input-field" >
+                                <input type="password" placeholder="Create password" class="password" [class.invalid]="!passwordMatched"  [(ngModel)]="password" (input)="validatePasswords()">
+                            </div>
+                            <div class="field input-field" [class.invalid]="!passwordMatched">
+                                <input type="password" placeholder="Confirm password" class="password" [class.invalid]="!passwordMatched"  [(ngModel)]="rePassword" (input)="validatePasswords()">
+                                <i class='bx bx-hide eye-icon'></i>
+                            </div>
+                        </div>
+                    </p-fieldset>
+                    <p-fieldset legend="Address">
+                        <div class="address">
+                            <div class="field input-field">
+                                <input type="text" placeholder="Street" class="input" [(ngModel)]="street" >
+                            </div>
+                            <div class="field input-field">
+                                <input type="text" placeholder="City" class="input" [(ngModel)]="city" >
+                            </div>
+                            <div class="field input-field">
+                                <input type="text" placeholder="Province" class="input" [(ngModel)]="province" >
+                            </div>
+                            <div class="field input-field">
+                                <input type="text" placeholder="Ward" class="input" [(ngModel)]="ward" >
+                            </div>
+                            <div class="field input-field">
+                                <input type="text" placeholder="ZIP Code" class="input" [(ngModel)]="zipCode" >
+                            </div>
+                        </div>
+                    </p-fieldset>
+                    
                     <div class="field button-field">
-                        <button>Signup</button>
+                        <button (click)="userRegister()" (keyup.enter)="userRegister()">Signup</button>
+                        <span>Already have an account? <a [routerLink]="['/auth/login']" routerLinkActive="active" class="link login-link">Login</a></span>
                     </div>
-                </form>
-                <div class="form-link">
-                    <span>Already have an account? <a href="auth/login" class="link login-link">Login</a></span>
+                    <div class="form-link">
+                        
+                    </div>
                 </div>
-            </div>
-            <div class="line"></div>
-            <div class="media-options">
-                <a href="#" class="field facebook">
-                    <i class='bx bxl-facebook facebook-icon  pi pi-facebook'></i>
-                    <span>Login with Facebook</span>
-                </a>
-            </div>
-            <div class="media-options">
-                <a href="#" class="field google">
-                    <img src="../../../assets/images/gg.png" alt="" class="google-img">
-                    <span>Login with Google</span>
-                </a>
             </div>
         </div>
     </section>

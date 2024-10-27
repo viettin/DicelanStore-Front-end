@@ -1,5 +1,18 @@
 .flexContainer-header {
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+#site-header{
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+    top: 0px;
+}
+.header-wrap-icon{
+    flex: 1 35%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .container {}
@@ -11,8 +24,19 @@
     margin-left: -15px
 }
 
+.search-product-input,.btn-search-product{
+    background: #ebebeb;
+    right: 1.25rem;
+    top: 0.5rem;
+}
+
 .row:after,
 .row:before {
     display: table;
     content: " "
+}
+
+::ng-deep .p-tieredmenu{
+    width: 100% !important;
+    text-align: left;
 }
